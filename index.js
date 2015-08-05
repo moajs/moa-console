@@ -1,4 +1,10 @@
-var main = require('./main');
+var file_path = __dirname;
+
+var paths = __dirname.split('/');
+paths.shift();
+var npm_path = paths.join('/');
+
+var main = require('/'+npm_path + '/main');
 
 var fs = require('fs');
 
