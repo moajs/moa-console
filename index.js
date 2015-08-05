@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 
 var file_path = __dirname;
-console.log(__dirname)
+// console.log(__dirname)
 var paths = __dirname.split('/');
 paths.shift();
 var npm_path = paths.join('/');
 
 var main = require('/'+npm_path + '/main');
 
-console.log(npm_path)
+// console.log(npm_path)
 
 var fs = require('fs');
 

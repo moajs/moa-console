@@ -1,6 +1,6 @@
 {
   "name": "moa-console",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,8 +12,16 @@
     "moa-console": "index.js",
     "mc": "index.js"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moajs/moa-console.git"
+  },
+  "author": "i5ting",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moajs/moa-console/issues"
+  },
+  "homepage": "https://github.com/moajs/moa-console",
   "dependencies": {
     "inflected": "^1.1.6",
     "log4js": "^0.6.26",
