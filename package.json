@@ -1,0 +1,22 @@
+{
+  "name": "moa-console",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "preferGlobal": "true",
+  "bin": {
+    "moa-console": "index.js",
+    "mc": "index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inflected": "^1.1.6",
+    "log4js": "^0.6.26",
+    "repl.history": "^0.1.3",
+    "require-directory": "^2.1.1"
+  }
+}
