@@ -12,7 +12,7 @@ var fs = require('fs');
 
 var current_path = process.cwd();
 
-var model_path = './app/models';
+var model_path = current_path + '/app/models';
 
 /**
  * `Moa console`
