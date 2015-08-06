@@ -2,6 +2,9 @@
 
 a console for debug mongoose entity
 
+
+- [原理](how.md)
+
 ## Install 
 
 ```
