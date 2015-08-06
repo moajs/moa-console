@@ -66,12 +66,6 @@ module.exports = function() {
   repl.commands['.list'] = {
     help: 'Show Available Entity',
     action: function() {
-      // var out = [];
-      // repl.rli.history.forEach(function(v, k) {
-      //   out.push(v);
-      // });
-      // repl.outputStream.write(out.reverse().join('\n') + '\n');
-      //
       var models = requireDirectory(module, model_path);
   
       console.log('Available Entity: ');
