@@ -3,7 +3,7 @@
 a console for debug mongoose entity
 
 
-- [原理](how.md)
+- [实现原理](how.md)
 
 ## Install 
 

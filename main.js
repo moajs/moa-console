@@ -44,9 +44,12 @@ module.exports = function() {
   console.log('Available Entity: ');
   // 此处没有做递归，可能有bug
   for(var i in models){
-    var name = Inflector.camelize(i);
-    console.log('  - ' + name);
-    global[name] = models[i];
+    if( i !== 'index'){
+      var name = Inflector.camelize(i);
+      console.log('  - ' + name);
+      global[i] = models[i];
+      global[name] = models[i];
+    }
   }
 
   var repl = REPL.start('Moa> ');
@@ -71,9 +74,12 @@ module.exports = function() {
       console.log('Available Entity: ');
       // 此处没有做递归，可能有bug
       for(var i in models){
-        var name = Inflector.camelize(i);
-        console.log('  - ' + name);
-        global[name] = models[i];
+        if( i !== 'index'){
+          var name = Inflector.camelize(i);
+          console.log('  - ' + name);
+          global[name] = models[i];
+          global[i] = models[i];
+        }
       }
       
       repl.displayPrompt();
